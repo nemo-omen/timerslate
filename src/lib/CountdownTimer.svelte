@@ -93,7 +93,7 @@
       </span>
     </div>
   {:else}
-    <span in:fade={{ duration: 200 }}>The show starts now!</span>
+    <span class="message" in:fade={{ duration: 200 }}>The show starts now!</span>
   {/if}
 </div>
 
@@ -111,6 +111,11 @@
   .time {
     display: flex;
     justify-content: center;
+  }
+
+  .message {
+    font-family: 'Jost';
+    letter-spacing: 0.0125em;
   }
 
   span {
