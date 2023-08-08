@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Allerta+Stencil&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite + Svelte + TS</title>
+  {#
+  <script type="module" crossorigin src="/assets/index-022bf639.js"></script> #}
+  <link rel="stylesheet" href="/assets/index-aa32c027.css">
+</head>
+
+<body>
+  <div id="app"></div>
+
+</body>
+<style>
+  :root {
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    line-height: 1;
+    font-weight: 600;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%
+  }
+
+  * {
+    box-sizing: border-box
+  }
+
+  body {
+    background-color: #000;
+    margin: 0;
+    display: flex;
+    place-items: center;
+    min-width: 320px;
+    min-height: 100vh
+  }
+
+  .timer.svelte-o0wt8t {
+    font-family: monospace;
+    align-self: stretch;
+    font-size: 5rem;
+    font-weight: 800;
+    color: #fff;
+    margin: 2rem;
+    text-transform: uppercase;
+    letter-spacing: .125em
+  }
+
+  .time.svelte-o0wt8t {
+    display: flex;
+    justify-content: center
+  }
+
+  span.svelte-o0wt8t {
+    display: block;
+    text-align: center
+  }
+
+  .day.svelte-o0wt8t {
+    font-family: sans-serif;
+    font-weight: 800;
+    letter-spacing: .05em
+  }
+
+  main.svelte-w321a5 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    margin: 3rem 0 4rem
+  }
+
+  .slate.svelte-w321a5 {
+    max-width: 46rem
+  }
+
+  .logo.svelte-w321a5 {
+    max-width: 15rem
+  }
+</style>
+<script>
+  var _e = Object.defineProperty; var pe = (e, t, n) => t in e ? _e(e, t, { enumerable: !0, configurable: !0, writable: !0, value: n }) : e[t] = n; var z = (e, t, n) => (pe(e, typeof t != "symbol" ? t + "" : t, n), n); (function () { const t = document.createElement("link").relList; if (t && t.supports && t.supports("modulepreload")) return; for (const r of document.querySelectorAll('link[rel="modulepreload"]')) o(r); new MutationObserver(r => { for (const i of r) if (i.type === "childList") for (const l of i.addedNodes) l.tagName === "LINK" && l.rel === "modulepreload" && o(l) }).observe(document, { childList: !0, subtree: !0 }); function n(r) { const i = {}; return r.integrity && (i.integrity = r.integrity), r.referrerPolicy && (i.referrerPolicy = r.referrerPolicy), r.crossOrigin === "use-credentials" ? i.credentials = "include" : r.crossOrigin === "anonymous" ? i.credentials = "omit" : i.credentials = "same-origin", i } function o(r) { if (r.ep) return; r.ep = !0; const i = n(r); fetch(r.href, i) } })(); function y() { } const re = e => e; function oe(e) { return e() } function W() { return Object.create(null) } function U(e) { e.forEach(oe) } function G(e) { return typeof e == "function" } function ie(e, t) { return e != e ? t == t : e !== t || e && typeof e == "object" || typeof e == "function" } let R; function X(e, t) { return e === t ? !0 : (R || (R = document.createElement("a")), R.href = t, e === R.href) } function he(e) { return Object.keys(e).length === 0 } const se = typeof window < "u"; let ge = se ? () => window.performance.now() : () => Date.now(), J = se ? e => requestAnimationFrame(e) : y; const N = new Set; function le(e) { N.forEach(t => { t.c(e) || (N.delete(t), t.f()) }), N.size !== 0 && J(le) } function ye(e) { let t; return N.size === 0 && J(le), { promise: new Promise(n => { N.add(t = { c: e, f: n }) }), abort() { N.delete(t) } } } function _(e, t) { e.appendChild(t) } function ce(e) { if (!e) return document; const t = e.getRootNode ? e.getRootNode() : e.ownerDocument; return t && t.host ? t : e.ownerDocument } function we(e) { const t = g("style"); return t.textContent = "/* empty */", $e(ce(e), t), t.sheet } function $e(e, t) { return _(e.head || e, t), t.sheet } function w(e, t, n) { e.insertBefore(t, n || null) } function p(e) { e.parentNode && e.parentNode.removeChild(e) } function g(e) { return document.createElement(e) } function k(e) { return document.createTextNode(e) } function A() { return k(" ") } function m(e, t, n) { n == null ? e.removeAttribute(t) : e.getAttribute(t) !== n && e.setAttribute(t, n) } function ve(e) { return Array.from(e.childNodes) } function P(e, t) { t = "" + t, e.data !== t && (e.data = t) } function be(e, t, { bubbles: n = !1, cancelable: o = !1 } = {}) { return new CustomEvent(e, { detail: t, bubbles: n, cancelable: o }) } const j = new Map; let B = 0; function Se(e) { let t = 5381, n = e.length; for (; n--;)t = (t << 5) - t ^ e.charCodeAt(n); return t >>> 0 } function ke(e, t) { const n = { stylesheet: we(t), rules: {} }; return j.set(e, n), n } function Ee(e, t, n, o, r, i, l, f = 0) {
+    const a = 16.666 / o; let s = `{
+`; for (let b = 0; b <= 1; b += a) {
+      const S = t + (n - t) * i(b); s += b * 100 + `%{${l(S, 1 - S)}}
+`} const u = s + `100% {${l(n, 1 - n)}}
+}`, c = `__svelte_${Se(u)}_${f}`, $ = ce(e), { stylesheet: d, rules: h } = j.get($) || ke($, e); h[c] || (h[c] = !0, d.insertRule(`@keyframes ${c} ${u}`, d.cssRules.length)); const v = e.style.animation || ""; return e.style.animation = `${v ? `${v}, ` : ""}${c} ${o}ms linear ${r}ms 1 both`, B += 1, c
+  } function Y(e, t) { const n = (e.style.animation || "").split(", "), o = n.filter(t ? i => i.indexOf(t) < 0 : i => i.indexOf("__svelte") === -1), r = n.length - o.length; r && (e.style.animation = o.join(", "), B -= r, B || Te()) } function Te() { J(() => { B || (j.forEach(e => { const { ownerNode: t } = e.stylesheet; t && p(t) }), j.clear()) }) } let I; function L(e) { I = e } function xe() { if (!I) throw new Error("Function called outside component initialization"); return I } function Ne(e) { xe().$$.on_mount.push(e) } const x = [], Z = []; let O = []; const ee = [], Oe = Promise.resolve(); let V = !1; function Ce() { V || (V = !0, Oe.then(ue)) } function M(e) { O.push(e) } const H = new Set; let T = 0; function ue() { if (T !== 0) return; const e = I; do { try { for (; T < x.length;) { const t = x[T]; T++, L(t), Le(t.$$) } } catch (t) { throw x.length = 0, T = 0, t } for (L(null), x.length = 0, T = 0; Z.length;)Z.pop()(); for (let t = 0; t < O.length; t += 1) { const n = O[t]; H.has(n) || (H.add(n), n()) } O.length = 0 } while (x.length); for (; ee.length;)ee.pop()(); V = !1, H.clear(), L(e) } function Le(e) { if (e.fragment !== null) { e.update(), U(e.before_update); const t = e.dirty; e.dirty = [-1], e.fragment && e.fragment.p(e.ctx, t), e.after_update.forEach(M) } } function Ae(e) { const t = [], n = []; O.forEach(o => e.indexOf(o) === -1 ? t.push(o) : n.push(o)), n.forEach(o => o()), O = t } let C; function Pe() { return C || (C = Promise.resolve(), C.then(() => { C = null })), C } function te(e, t, n) { e.dispatchEvent(be(`${t ? "intro" : "outro"}${n}`)) } const D = new Set; let Ie; function F(e, t) { e && e.i && (D.delete(e), e.i(t)) } function Me(e, t, n, o) { if (e && e.o) { if (D.has(e)) return; D.add(e), Ie.c.push(() => { D.delete(e), o && (n && e.d(1), o()) }), e.o(t) } else o && o() } const Re = { duration: 0 }; function De(e, t, n) { const o = { direction: "in" }; let r = t(e, n, o), i = !1, l, f, a = 0; function s() { l && Y(e, l) } function u() { const { delay: $ = 0, duration: d = 300, easing: h = re, tick: v = y, css: b } = r || Re; b && (l = Ee(e, 0, 1, d, $, h, b, a++)), v(0, 1); const S = ge() + $, E = S + d; f && f.abort(), i = !0, M(() => te(e, !0, "start")), f = ye(q => { if (i) { if (q >= E) return v(1, 0), te(e, !0, "end"), s(), i = !1; if (q >= S) { const Q = h((q - S) / d); v(Q, 1 - Q) } } return i }) } let c = !1; return { start() { c || (c = !0, Y(e), G(r) ? (r = r(o), Pe().then(u)) : u()) }, invalidate() { c = !1 }, end() { i && (s(), i = !1) } } } function je(e) { e && e.c() } function fe(e, t, n) { const { fragment: o, after_update: r } = e.$$; o && o.m(t, n), M(() => { const i = e.$$.on_mount.map(oe).filter(G); e.$$.on_destroy ? e.$$.on_destroy.push(...i) : U(i), e.$$.on_mount = [] }), r.forEach(M) } function ae(e, t) { const n = e.$$; n.fragment !== null && (Ae(n.after_update), U(n.on_destroy), n.fragment && n.fragment.d(t), n.on_destroy = n.fragment = null, n.ctx = []) } function Be(e, t) { e.$$.dirty[0] === -1 && (x.push(e), Ce(), e.$$.dirty.fill(0)), e.$$.dirty[t / 31 | 0] |= 1 << t % 31 } function de(e, t, n, o, r, i, l, f = [-1]) { const a = I; L(e); const s = e.$$ = { fragment: null, ctx: [], props: i, update: y, not_equal: r, bound: W(), on_mount: [], on_destroy: [], on_disconnect: [], before_update: [], after_update: [], context: new Map(t.context || (a ? a.$$.context : [])), callbacks: W(), dirty: f, skip_bound: !1, root: t.target || a.$$.root }; l && l(s.root); let u = !1; if (s.ctx = n ? n(e, t.props || {}, (c, $, ...d) => { const h = d.length ? d[0] : $; return s.ctx && r(s.ctx[c], s.ctx[c] = h) && (!s.skip_bound && s.bound[c] && s.bound[c](h), u && Be(e, c)), $ }) : [], s.update(), u = !0, U(s.before_update), s.fragment = o ? o(s.ctx) : !1, t.target) { if (t.hydrate) { const c = ve(t.target); s.fragment && s.fragment.l(c), c.forEach(p) } else s.fragment && s.fragment.c(); t.intro && F(e.$$.fragment), fe(e, t.target, t.anchor), ue() } L(a) } class me { constructor() { z(this, "$$"); z(this, "$$set") } $destroy() { ae(this, 1), this.$destroy = y } $on(t, n) { if (!G(n)) return y; const o = this.$$.callbacks[t] || (this.$$.callbacks[t] = []); return o.push(n), () => { const r = o.indexOf(n); r !== -1 && o.splice(r, 1) } } $set(t) { this.$$set && !he(t) && (this.$$.skip_bound = !0, this.$$set(t), this.$$.skip_bound = !1) } } const Fe = "4"; typeof window < "u" && (window.__svelte || (window.__svelte = { v: new Set })).v.add(Fe); function Ue(e, { delay: t = 0, duration: n = 400, easing: o = re } = {}) { const r = +getComputedStyle(e).opacity; return { delay: t, duration: n, easing: o, css: i => `opacity: ${i * r}` } } function qe(e) { let t, n; return { c() { t = g("span"), t.textContent = "The show starts now!", m(t, "class", "svelte-o0wt8t") }, m(o, r) { w(o, t, r) }, p: y, i(o) { o && (n || M(() => { n = De(t, Ue, { duration: 200 }), n.start() })) }, o: y, d(o) { o && p(t) } } } function ze(e) { let t; function n(i, l) { return i[5] > 0 ? Ke : He } let o = n(e), r = o(e); return { c() { t = g("div"), r.c(), m(t, "class", "time svelte-o0wt8t") }, m(i, l) { w(i, t, l), r.m(t, null) }, p(i, l) { o === (o = n(i)) && r ? r.p(i, l) : (r.d(1), r = o(i), r && (r.c(), r.m(t, null))) }, i: y, o: y, d(i) { i && p(t), r.d() } } } function He(e) { let t = Number.parseInt(e[4]) > 0, n, o, r, i, l, f, a, s = t && ne(e); return { c() { s && s.c(), n = A(), o = g("span"), r = k(e[3]), i = k(":"), l = A(), f = g("span"), a = k(e[2]), m(o, "class", "svelte-o0wt8t"), m(f, "class", "svelte-o0wt8t") }, m(u, c) { s && s.m(u, c), w(u, n, c), w(u, o, c), _(o, r), _(o, i), w(u, l, c), w(u, f, c), _(f, a) }, p(u, c) { c & 16 && (t = Number.parseInt(u[4]) > 0), t ? s ? s.p(u, c) : (s = ne(u), s.c(), s.m(n.parentNode, n)) : s && (s.d(1), s = null), c & 8 && P(r, u[3]), c & 4 && P(a, u[2]) }, d(u) { u && (p(n), p(o), p(l), p(f)), s && s.d(u) } } } function Ke(e) { let t, n = e[0].toLocaleDateString("en-US", { month: "long", day: "numeric", weekday: "long" }) + "", o, r, i = e[0].toLocaleTimeString("en-US", { hour: "numeric", minute: "numeric" }) + "", l; return { c() { t = g("span"), o = k(n), r = A(), l = k(i), m(t, "class", "day svelte-o0wt8t") }, m(f, a) { w(f, t, a), _(t, o), _(t, r), _(t, l) }, p(f, a) { a & 1 && n !== (n = f[0].toLocaleDateString("en-US", { month: "long", day: "numeric", weekday: "long" }) + "") && P(o, n), a & 1 && i !== (i = f[0].toLocaleTimeString("en-US", { hour: "numeric", minute: "numeric" }) + "") && P(l, i) }, d(f) { f && p(t) } } } function ne(e) { let t, n, o; return { c() { t = g("span"), n = k(e[4]), o = k(":"), m(t, "class", "svelte-o0wt8t") }, m(r, i) { w(r, t, i), _(t, n), _(t, o) }, p(r, i) { i & 16 && P(n, r[4]) }, d(r) { r && p(t) } } } function Ve(e) { let t; function n(i, l) { return i[1] ? qe : ze } let o = n(e), r = o(e); return { c() { t = g("div"), r.c(), m(t, "class", "timer svelte-o0wt8t") }, m(i, l) { w(i, t, l), r.m(t, null) }, p(i, [l]) { o === (o = n(i)) && r ? r.p(i, l) : (r.d(1), r = o(i), r && (r.c(), F(r, 1), r.m(t, null))) }, i(i) { F(r) }, o: y, d(i) { i && p(t), r.d() } } } function K(e) { return e < 10 ? "0" + e.toString() : e.toString() } function Ge(e, t, n) { let o, r, i, l, f, a, { expires: s } = t; const c = new Date().getTime(); let d = s.getTime() - c; function h() { return { days: Math.floor(d / 1e3 / 60 / 60 / 24), hours: K(Math.floor(d / 1e3 / 60 / 60) % 24), minutes: K(Math.floor(d / 1e3 / 60) % 60), seconds: K(Math.floor(d / 1e3) % 60) } } function v() { n(6, o = { ...h() }) } function b() { n(1, a = !0) } function S() { v(); const E = setInterval(() => { d -= 1e3, d < 0 ? (b(), clearInterval(E)) : v() }, 1e3) } return Ne(() => { S() }), e.$$set = E => { "expires" in E && n(0, s = E.expires) }, e.$$.update = () => { e.$$.dirty & 64 && n(5, r = o.days), e.$$.dirty & 64 && n(4, i = o.hours), e.$$.dirty & 64 && n(3, l = o.minutes), e.$$.dirty & 64 && n(2, f = o.seconds) }, n(6, o = { ...h() }), n(1, a = !1), [s, a, f, l, i, r, o] } class Je extends me { constructor(t) { super(), de(this, t, Ge, Ve, ie, { expires: 0 }) } } function Qe(e) { let t, n, o, r, i, l, f, a, s; return i = new Je({ props: { expires: e[0] } }), { c() { t = g("main"), n = g("img"), r = A(), je(i.$$.fragment), l = A(), f = g("img"), m(n, "class", "slate svelte-w321a5"), X(n.src, o = "https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2023/08/HSFBPS_Logo.png") || m(n, "src", o), m(n, "alt", "High School Football Preview Show"), m(f, "class", "logo svelte-w321a5"), X(f.src, a = "https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2023/08/TwistedRootBurger_Logo_white.png") || m(f, "src", a), m(f, "alt", "Twisted Root Burger Company"), m(t, "class", "svelte-w321a5") }, m(u, c) { w(u, t, c), _(t, n), _(t, r), fe(i, t, null), _(t, l), _(t, f), s = !0 }, p: y, i(u) { s || (F(i.$$.fragment, u), s = !0) }, o(u) { Me(i.$$.fragment, u), s = !1 }, d(u) { u && p(t), ae(i) } } } function We(e) { return [new Date("August 10, 2023 18:30:00")] } class Xe extends me { constructor(t) { super(), de(this, t, We, Qe, ie, {}) } } new Xe({ target: document.getElementById("app") });
+</script>
+
+</html>
