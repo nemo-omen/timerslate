@@ -1,7 +1,7 @@
 <script lang="ts">
   import CountdownTimer from './lib/CountdownTimer.svelte';
-  // const live = new Date('August 10, 2023 18:30:00');
-  const live = new Date('August 8, 2023 14:19:00');
+  const live = new Date('August 10, 2023 18:30:00');
+  // const live = new Date('August 8, 2023 14:19:00');
 </script>
 
 <main>
