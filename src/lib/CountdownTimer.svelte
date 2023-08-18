@@ -68,8 +68,8 @@
   <img
     transition:fade={{ duration: 500 }}
     class="overlay-img"
-    src="https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2023/08/hsfb-preview-show-fs.png"
-    alt="HSFBPS"
+    src="https://www.conchovalleyhomepage.com/wp-content/uploads/sites/83/2023/08/CMN_2023_FS.png"
+    alt="2023 Childrens Miracle Network Telethon"
   />
 {/if}
 
@@ -93,17 +93,17 @@
       </span>
     </div>
   {:else}
-    <span class="message" in:fade={{ duration: 200 }}>The show starts now!</span>
+    <span class="message" in:fade={{ duration: 200 }}>Starting Soon!</span>
   {/if}
 </div>
 
 <style>
   .timer {
-    font-family: monospace;
+    font-family: 'Chivo Mono';
     align-self: stretch;
     font-size: 7rem;
-    font-weight: 800;
-    color: #ffffff;
+    font-weight: 700;
+    color: #000000;
     text-transform: uppercase;
     letter-spacing: 0.125em;
   }
@@ -114,8 +114,10 @@
   }
 
   .message {
-    font-family: 'Jost';
-    letter-spacing: 0.0125em;
+    font-family: 'Lato';
+    font-weight: 900;
+    /* font-family: 'Jost'; */
+    letter-spacing: 0.05em;
   }
 
   span {
